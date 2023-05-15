@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+     --main-color: #110202;
+     --black-color: #121212;
+     --border: 0.1rem solid rgba(255,255,255,0.4);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    transition: 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+/*! temel html kodları */
+html{
+    font-size: 62.5%; 
+    overflow-x: hidden ;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    
+
+}
+
+
+body{
+    background-color: var(--main-color);
+    height:500vh;
+}
+section{
+    padding: 3rem 2%;
+
+}
+.btn{
+    margin-top: 2rem;
+    display:inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color:black;
+    background-color:white;
+    cursor:pointer;
+}
+/*! header başlangıcı */
+.header .helo img {  
+    height: 13rem;
+    border-radius: 30rem;
+    
+}
+ 
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75)
+}
+.header .navbar a{
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color:rgba(111, 9, 87, 0.855);
+    padding-bottom: 0.5rem;
+    border-width: 0.3rem;
+    font-size: 1.6rem; 
+}
+.header .buttons button{
+    cursor:pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+
+
+}
+
+/*! header bitişi */
+/*! hakkımda başlangıç */
+.hakkımda{
+    min-height: 100vh;
+    background: url(../images/arkaplan.jpg) no-repeat;
+    background-size: cover;
+    background-position:initial;
+    display: flex;
+    
+      
+}
+.hakkımda .content{
+    max-width: 60rem;
+    color:white;
+}
+.hakkımda .content h3{
+    font-size: 6rem;
+    color:white;
+    align-items:inherit;
+}
+.hakkımda .content p{ 
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:white;
+    margin-top: 4rem;
+}
+.hayatım{
+    min-height: 100vh;
+    background: url(../images/arkaplan.jpg) no-repeat;
+    background-size: cover;
+    background-position:initial;
+    display: flex;
+}
+.hayatım .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.hayatım .box-container .box{
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    min-height: 60rem;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    opacity: .9.5;
+    
+}
+.hayatım .box-container .box img {
+    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30rem;
+    border: 2px solid purple;
+    margin-bottom: 2rem;   
+}
+.hayatım .box-container .box .box1{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.hayatım .box-container .box .box2{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem; 
+}
+.hayatım .box-container .box .box3{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.hayatım .box-container .box .box4{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.özgeçmiş{
+    min-height: 100vh;
+    background: url(../images/arkaplan2.jpg) no-repeat;
+    background-size: cover;
+    background-position:initial;
+    display: flex;
+    
+}
+.özgeçmiş .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+.özgeçmiş .başlık {
+  float: left;
+  clear: both;
+  margin-right: 20px;
+  width: 120px; /* yan başlığın genişliği */
+  margin-bottom: 10rem;
+  padding: 10px; /* içeriğin etrafına 10 piksel boşluk bırakacak */
+  color: white;
+  writing-mode: vertical-lr; /* Metni dikey şekilde sola doğru yazdırır */
+  transform: rotate(-180deg); /* Metnin ters yönüne çevirir */
+  left: 0; /* Ekranın solunda başlayacak */
+  padding: 20px; /* Metnin etrafında boşluk bırakır */
+  font-size: 24px; /* Yazı boyutu */
+  font-size: 7rem ;
+  
+}
+.özgeçmiş .box-container .box {
+border: var(--border);
+text-align: center;
+padding: 3rem 2rem;
+background-color: rgba(128, 128, 128, 0.5);
+border-radius: 3rem;
+}
+.özgeçmiş .box-container .box p {
+    padding: 1.2rem ;
+    margin: 10px 0;
+    font-size: large;
+    color:white;
+    
+}
+.özgeçmiş .box-container .box .cv1 {
+height: 5rem;
+width: 5rem;
+border: 5px ridge purple;
+object-fit: cover;
+}
+.özgeçmiş .box-container .box .cvresim {
+height: 10rem;
+width: 10rem;
+border-radius: 20rem;
+object-fit:unset;
+margin-top: 3rem;
+
+}
+.özgeçmiş .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: white;
+    text-decoration: underline;
+
+}
+.özgeçmiş .box-container .box .icons {
+    font-size: 2rem;
+    color: goldenrod;
+}
+.özgeçmiş .box-container .box .list {
+    list-style-type: disc; padding-left: 5rem;
+    color:white;
+    
+}
+.memleketim{
+    background: url(../images/arkaplan3.jpg) no-repeat;
+    background-size:cover;
+    height: 300vh;
+    background-position:initial;
+    
+  }
+.memleketim-başlık {
+    font-size: 40px;
+    color:white;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    padding-bottom: 5px;
+    margin-left: 2px;
+    
+}
+.memleketim-container {
+    margin-left: 2rem;
+   
+    
+}
+.memleketim-liste {
+    list-style: none;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    transform: translate(0);
+    transition: 1s all ease-in-out;
+
+}
+.memleket-fotolar-slider {
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    transition: 1s all ease-in-out;
+}
+.fotolar-info-başlık {
+    background-color: rgb(40,40,40,0.4);
+    padding: 0 10px;
+    font-size: large;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    color: white;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+
+}
+.memleket-fotolar {
+    position: relative;
+    
+}
+.memleket-fotolar:hover .fotolar-info-başlık {
+    opacity:1;
+}
+.memleket-fotolar:hover .memleket-fotolar-slider {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: .9;
+    filter: brightness(40%);
+}
+.memleketim-wrapper {
+    position: relative;
+    overflow: hidden;
+  
+}
+.arrow{
+    width: 100px;
+    display: flex;
+    position: absolute;
+    font-size: 180px;
+    right: 20px;
+    opacity: 0.6;
+    top: 10px;
+    color: black;
+    transition: .5s ease all;
+    cursor: pointer;
+    transform: translateY(-50);
+}
+.arrow:hover{
+    opacity: 1;
+    
+}
+
+
+
+
+
+.memleketim2 .memleketim2-container{
+    
+    height: calc(200vh - 550px);
+    margin-top: 120px;
+    margin-left: 2px;
+}
+
+
+.memleketim2 .memleketim2-container .memleketim2-başlık{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    margin-bottom: 80px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.836);
+    color:rgb(28, 13, 31);
+    font-size: 30px;
+    border-radius: 10px;
+    border-style:double;
+    
+}
+
+
+
+
+.memleketim2 .memleketim2-container .galery{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    width: 300px;
+    height: 200px;
+    margin-top: 40rem;
+    margin-bottom: 10rem;
+    
+}
+
+
+
+.memleketim2 .memleketim2-container .box{
+    background-color: rgba(255, 255, 255, 0.818);
+    padding: 5px;
+    margin: 10px 0;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 6rem;
+    
+
+    
+}
+    
+
+.memleketim2 .memleketim2-container  .galery .box1{
+    width: 12rem;
+    min-width: 25rem;
+    max-width: 50rem;
+    max-height: 70rem;
+    background-color: rgba(255, 255, 255, 0.818);
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+    overflow-y: scroll;
+    
+    
+    
+}
+.memleketim2 .memleketim2-container .galery .box2{
+    width: 12rem;
+    min-width: 25rem;
+    max-width: 50rem;
+    max-height: 70rem;
+    background-color: rgba(255, 255, 255, 0.818);
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+    overflow-y: scroll;
+    
+
+    
+}
+.memleketim2 .memleketim2-container .galery .box3{
+    width: 12rem;
+    min-width: 25rem;
+    max-width: 50rem;
+    max-height: 70rem;
+    background-color: rgba(255, 255, 255, 0.818);
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+    overflow-y: scroll;
+    
+    
+    
+}
+
+.memleketim2 .memleketim2-container .galery .box4{
+    width: 12rem;
+    min-width: 25rem;
+    max-width: 50rem;
+    max-height: 70rem;
+    background-color: rgba(255, 255, 255, 0.818);
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+    overflow-y: scroll;
+    
+
+    
+}
+.memleketim2 .memleketim2-container .galery .box5{
+    width: 12rem;
+    min-width: 25rem;
+    max-width: 50rem;
+    max-height: 70rem;
+    background-color: rgba(255, 255, 255, 0.818);
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+    border-style: double;
+    overflow-y: scroll;
+    
+}
+
+
+.memleketim2 .memleketim2-container .box h1{
+    border-bottom: 2px solid rgb(28, 13, 31);
+    padding: 0;
+    font-size: 2.6rem;
+}
+
+.memleketim2 .memleketim2-container .galery .box{
+    width: 12rem;
+  height: 650px;
+  background-color: rgba(255, 255, 255, 0.836);
+  padding: 5px;
+  color: black;
+  border-radius: 10px;
+  border-style: double;
+}
+
+.memleketim2 .memleketim2-container .box p{
+    padding: 5px;
+    margin: 5px;
+    text-transform: none;
+    font-size: large;
+
+}
+
+
+
+.memleketim2 .memleketim2-container .galery h1{
+    border-bottom: 2px solid rgb(28, 13, 31);
+    padding: 5px;
+    font-size: large;
+}
+
+.memleketim2 .memleketim2-container .galery p{
+    padding: 5px;
+    margin: 5px;
+    text-transform: none;
+    font-size: large;
+    
+}
+
+.memleketim2 .memleketim2-container .galery img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+    
+}
+
+
+.trabzonspor .trabzonspor-container .trabzonspor-başlık{
+    margin-bottom: 30px;
+    margin-top: -40px;
+}
+.trabzonspor{
+    background: url(../images/wall2.jpg) no-repeat;
+    height: calc(300vh - 150px);
+    background-size: 100% 100%;
+}
+
+.trabzonspor .trabzonspor-container{
+    padding: 50px;
+}
+
+
+.trabzonspor .trabzonspor-container h1{
+    width: 550px;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 70px;
+}
+
+.trabzonspor .trabzonspor-container .main{
+    display: flex;
+    column-gap: 10px;
+}
+
+.trabzonspor .trabzonspor-container .main .box{
+    width: 600px;
+    height: 400px;
+    background-color: rgba(19, 18, 18, 0.7);
+    padding: 0px;
+    margin: 0;
+    color: white;
+    border-radius: 10px;
+    border-style: double;
+    overflow:auto;
+}
+
+.trabzonspor .trabzonspor-container .main h1{
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+.trabzonspor .trabzonspor-container .main img{
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    border-style: groove;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.605);
+    opacity: .9.5;
+}
+
+.trabzonspor .trabzonspor-container p{
+    padding: 5px;
+    margin: 5px;
+    text-transform: none;
+    font-size: larger;
+}
+
+
+.ilgialani{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+     url(../images/kişiselwp.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+}
+.row{
+    display: flex;
+    column-gap: 40px;
+    height: 88%;
+    align-items: center;
+}
+.col {
+    flex-basis: 50% ;
+    color: white;
+}
+
+.aciklama{
+    color:white;
+    font-size: 16px;
+}
+.cards{
+    max-width: 800px;
+    margin: auto;
+}
+.card{
+    width: 280px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid purple;
+    transition: ease 0.5s;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.card.card1{
+    background-image: url(../images/me.jpg);
+}
+.card.card2{
+    background-image: url(../images/me.jpg);
+}
+.card.card3{
+    background-image: url(../images/me.jpg);
+}
+.card.card4{
+    background-image: url(../images/me.jpg);
+}
+.card .card-head{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+
+}
+
+    hr {
+        display: block;
+        height: 7px;
+        border: 7px white;
+        border: 0;
+        border-top: 7px solid rgb(255, 255, 255);
+        margin: 1em 0;
+        padding: 0;
+      }
+  
+h5{
+    font-size: large;
+    color:#9e166f
+}
+.card:hover{
+    transform: translateY(-20px);
+    border-color: white;
+
+}
+
+.ilgialani .row .col h1{
+    color:white;
+    font-size: 100px;
+}
+.ilgialani .row .col p{
+    font-size: 16px;
+    color: white;
+    line-height: 16px;
+}
+
+
+/* responsive start */
+
+@media only screen and (max-width:800px){
+    
+    .featured-content{
+        height: 50vh;
+    }
+    .featured-desc{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        max-width: 200px;
+        padding: 0;
+    }
+    .featured-title{
+        width: 200px;
+    }
+}
+
+/* responsive end */
+
+
+
+
+
+
+
+
+
+
+
+
